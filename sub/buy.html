@@ -18,5 +18,57 @@
         <div id ="buyHeader" class='header'>
             <p><img src="../image/logo.png" alt="로고" class='logo'>코인 구매</p>
         </div>
+        <div id="buyPageWrap">
+            <div class="btnBox">
+                <input type="text" class="buyPrice" placeholder="금액 입력 (만원 단위로만 입력 가능)">
+                <input type="hidden" name='price'>
+                <ul>
+                    <li><button data-price='10000' class='c1'>1만원</button></li>
+                    <li><button data-price='30000' class='c1'>3만원</button></li>
+                    <li><button data-price='50000' class='c2'>5만원</button></li>
+                    <li><button data-price='100000' class='c2'>10만원</button></li>
+                </ul>
+                <ul>
+                    <li><button data-price='300000' class='c3'>30만원</button></li>
+                    <li><button data-price='500000' class='c3'>50만원</button></li>
+                    <li><button data-price='1000000' class='c4'>100만원</button></li>
+                    <li><button data-price='' class='c5'>정정</button></li>
+                </ul>
+            </div>
+            <div class='buyInformation'>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>최종지급수량</th>
+                            <td>KRWC</td>
+                        </tr>
+                        <tr>
+                            <th>결제 수단</th>
+                            <td>현금</td>
+                        </tr>
+                        <tr>
+                            <th>입금 정보 1</th>
+                            <td>케이뱅크(*입금계좌확인*)<br><br>100-130-299799 이우형<br>(반드시 입금후 코인신청 요망-토스,카카오페이 핀크 네이버페이등 어플송금불가)</td>
+                        </tr>
+                        <tr>
+                            <th>입금 정보 2</th>
+                            <td>※입금시 등록된 계좌와 입금자명 동일하지않을시 입금취소처리됩니다.<br>23시30분 에서 00시30분까지 은행점검시간이오니 입금불가합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class='btnWrap'>
+                <button type="button" class="buyBtn">구매하기</button>
+                <button type="button" class="cancleBtn">취소</button>
+            </div>
+        </div>
+        <div id="popupWrap">
+            <div class="popup">
+                <h3>Message</h3>
+                <p>구매하신 100코인<br>구매가 정상 신청되었습니다.<br>계좌 입금 부탁드립니다.</p>
+                <button type="button" class="popClose">확인</button>
+            </div>
+        </div>
+
     </body>
 </html>
