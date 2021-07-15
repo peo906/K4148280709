@@ -27,7 +27,7 @@ q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 
 
-#Wrap {width: 100%; height: 100%;}
+body {width: 100%; height: 1800px;}
 #mainHeader.header{width: 100%; height: 337px; background: #ff7f00; border-radius: 0 0 0 80px;}
 #mainHeader {padding: 90px 0 0 0; box-sizing: border-box; text-align: center;}
 #mainHeader .logo {width: 75px; height: 75px;}
