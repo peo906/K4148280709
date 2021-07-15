@@ -30,7 +30,6 @@ $(function(){
         });
         $(document).on('click','.buyBtn',function () {
             var pirce = $('input[name=price]').val();
-            console.log(pirce);
             if (pirce) {
                 if (pirce > 9999){
                     $('#popupWrap').show();
@@ -40,8 +39,11 @@ $(function(){
             }else{
                 alert('금액을 입력해주세요.');
             }
-
         });
+        $(document).on('click','.popClose',function () {
+            $(this).parents('#popupWrap').hide();
+        })
+
         function comma(str) {
             str = String(str);
             return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
