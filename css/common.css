@@ -65,7 +65,7 @@ input {padding: 0; -webkit-appearance:none;-webkit-border-radius:0;}
 #buyHeader {padding: 50px 5% 25px; margin-bottom: 20px;}
 #buyHeader p {font-size: 25px; color: #fff;}
 #buyPageWrap {width: 100%; padding: 0 5%; box-sizing: border-box;}
-#buyPageWrap .btnBox .buyPrice{border: 3px solid #ff7f00; width: 100%; height: 50px; text-indent: 5%; font-size: 16px;}
+#buyPageWrap .btnBox .buyPrice{border: 3px solid #ff7f00; width: 100%; height: 50px; text-indent: 5%; font-size: 16px; box-sizing: border-box;}
 #buyPageWrap .btnBox .buyPrice::placeholder {font-weight: bold; color: rgba(92, 95, 103, 0.72);}
 #buyPageWrap .btnBox ul {display: table; margin: 10px 0; width: 100%;}
 #buyPageWrap .btnBox ul li {display: table-cell; text-align: center; width: 25%;}
@@ -75,7 +75,7 @@ input {padding: 0; -webkit-appearance:none;-webkit-border-radius:0;}
 #buyPageWrap .btnBox ul li button.c3 {background: #2483ff;}
 #buyPageWrap .btnBox ul li button.c4 {background: #000000;}
 #buyPageWrap .btnBox ul li button.c5 {background: #e03321;}
-#buyPageWrap .buyInformation table {border: 1px solid #999; width: 100%;}
+#buyPageWrap .buyInformation table {border: 1px solid #999; width: 100%; margin: 40px 0;}
 #buyPageWrap .buyInformation table tr {border: 1px solid #999;}
 #buyPageWrap .buyInformation table th,#buyPageWrap .buyInformation table td {border: 1px solid #999;}
 #buyPageWrap .buyInformation table th {width: 30%; background: rgba(255, 127, 0, 0.46); padding: 15px 0; border: 1px solid #999;}
