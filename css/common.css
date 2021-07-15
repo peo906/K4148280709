@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit; font-family: modern;vertical-align: baseline; text-decoration: none; color:#000;}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
@@ -27,9 +27,24 @@ q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 
 
-body {width: 100%; height: 1800px;}
-#mainHeader.header{width: 100%; height: auto; background: #ff7f00; border-radius: 0 0 0 80px;}
-#mainHeader {padding: 50px 0 65px 0; box-sizing: border-box; text-align: center;}
+body {width: 100%; height: auto;}
+.header{width: 100%; height: auto; background: #ff7f00; border-radius: 0 0 0 80px;}
+#mainHeader {position: relative; padding: 50px 0 65px 0; box-sizing: border-box; text-align: center;}
 #mainHeader .logo {width: 50px; height: 50px;}
-#mainHeader .krwc {margin-top: 20px; font-size: 40px; color:#fff; font-family: modern; text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);}
+#mainHeader .krwc {margin-top: 20px; font-size: 40px; color:#fff; letter-spacing: -1.75px; text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);}
+#mainHeader .logout {position: absolute; top: 30%; right: 8%; letter-spacing: -0.88px; font-size: 16px;}
+#mainHeader .logout::after {content: ''; position: absolute; bottom:-2px; left:0; width: 55px; height: 1px; background: #000;}
 /* h2 {font-size: 20px; font-family:modern;} */
+
+#mainWrap .buyBtn {padding: 10px 0; text-align: center;}
+#mainWrap .buyBtn a {display: block; width: 90%; margin: 0 5%; height: 60px; line-height: 60px; background: #000; color: #fff; font-size: 20px; letter-spacing: -0.95px; border-radius: 30px; }
+#mainWrap .listWrap {width: 95%; margin: 0 2.5%;}
+#mainWrap .listWrap ul {max-height: 560px; overflow-y: hidden;}
+#mainWrap .listWrap ul li {width: 100%; height: 60px; padding: 10px 0; background: #F1F1F1; margin-bottom: 5px;}
+#mainWrap .listWrap ul li div {float: left; height: 100%; font-size: 18px; line-height: 30px; box-sizing: border-box; letter-spacing: -0.88px;}
+#mainWrap .listWrap ul li .date {width: 20%; text-align: center}
+#mainWrap .listWrap ul li .state {width: 30%; text-indent: 10%;}
+#mainWrap .listWrap ul li .state p span {display: block; color: #FF3120;}
+#mainWrap .listWrap ul li .price {width: 50%;padding-right: 5%; text-align: right; color: #ff7f00;}
+#mainWrap .listWrap ul li .price p span {display: block; color: #000;}
+#mainWrap .listWrap .more {display: block; width: 50%; height: 50px; margin: 10px auto 20px auto; color: #fff; font-size: 18px; text-align: center; background: #5c5f67; border: none; border-radius: 50px;}
