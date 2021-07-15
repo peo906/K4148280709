@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="css/common.css">
         <script type="text/javascript">
             window.addEventListener('load', function() {
-                toggleFullScreen();
+                setTimeout(function() {window.scrollTo(0, 1)},1)
+                // toggleFullScreen();
             });
 
             function toggleFullScreen() {
@@ -31,7 +32,7 @@
             }
         </script>
     </head>
-    <body onload="setTimeout(function() {window.scrollTo(0, 1)},1)">
+    <body>
         <div id ="mainHeader" class='header'>
             <img src="image/logo.png" alt="로고" class='logo'>
             <p class='krwc'>0 KRWC</p>
